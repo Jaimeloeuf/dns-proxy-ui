@@ -21,6 +21,12 @@ const routes = [
     component: () => import("@/views/CustomList.vue"),
     meta: { Auth_requirements: AuthType.private },
   },
+  {
+    path: "/settings",
+    name: "settings",
+    component: () => import("@/views/Settings.vue"),
+    meta: { Auth_requirements: AuthType.private },
+  },
 ];
 
 export default routes;
