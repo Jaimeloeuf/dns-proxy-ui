@@ -1,6 +1,7 @@
 import firebase from "firebase/app";
 import "firebase/auth";
 import store from "../store/index";
+import router from "../router/index";
 // import initialState from "../store/initialState";
 
 /**
@@ -27,5 +28,5 @@ export default async function logout() {
   sessionStorage.clear();
 
   // Redirect to login view
-  this.$router.push({ name: "login" });
+  router.push({ name: "login" });
 }
